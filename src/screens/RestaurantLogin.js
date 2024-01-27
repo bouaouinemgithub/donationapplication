@@ -25,16 +25,20 @@ const RestaurantLogin = {
   return (
    <View style={styles.container}>
     
-      <Text style={styles.Title}>Welcome Back Saravana bavan!</Text>
+      <Text style={styles.Title}>{RestaurantLogin.title}</Text>
       <View  style={styles.Page}>
-           <Image style={styles.PageImag} source={MonImage} />
-           <ButtonClick title="Make a Donation"
+           <Image style={styles.PageImag} source={RestaurantLogin.imagepath} />
+           <ButtonClick title={RestaurantLogin.button1}
+             containerStyle={styles.customButton1} 
+             function={() => {
+               navigation.navigate('NewDonation')
+             }} 
+            
+            />
+             <ButtonClick title={RestaurantLogin.button2}
              containerStyle={styles.customButton1} 
             />
-             <ButtonClick title="Your Donations"
-             containerStyle={styles.customButton1} 
-            />
-             <ButtonClick title="Donation Requests"
+             <ButtonClick title={RestaurantLogin.button3}
              containerStyle={styles.customButton1} 
             />
       </View>

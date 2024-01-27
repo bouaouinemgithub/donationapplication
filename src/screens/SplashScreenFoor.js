@@ -8,16 +8,13 @@ const MonImage = require('../../assets/Img/imag4.png');
 import ButtonClic from '../components/ButtonClick'
 
 function SplashScreenFoor({navigation}) {
-
-// la prtie de fichier Json 
 const SplashScreenFoor = {
     
   "imagepath":MonImage,
   "title": "Be the change you want to see in this world",
   "icon_title": "chevron-right",
-  "button":"Started"
+  "button":"Get Started"
 }
-
   return (
    <View style={styles.container}>
     <View style={{paddingTop:width*0.23}}>
@@ -28,17 +25,8 @@ const SplashScreenFoor = {
         function={() => {
           navigation.navigate('Login')
         }} 
-     
-       />
-      
-       {/* <IconComponent iconName={SplashScreenFoor.icon_title}
-      
-        // function={() => {
-        //   navigation.navigate('SplashScreenTow')
-        // }} 
-       /> */}
-    
-   </View>
+         />
+     </View>
   );
 }
 
@@ -49,7 +37,6 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-
   Text:{
      width:width*0.58,
      fontSize:Variable.fontSizes.small,

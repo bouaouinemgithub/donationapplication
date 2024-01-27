@@ -46,7 +46,7 @@ const SignUp = {
               <ButtonClick 
                title={SignUp.button}
                function={() => {
-                  navigation.navigate('RestaurantLogin')
+                  navigation.navigate('ConfirmRequests')
                 }} 
                />
             </View>

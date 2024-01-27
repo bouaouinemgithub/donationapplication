@@ -6,10 +6,8 @@ import Variable from '../../assets/Variable';
 import IconComponent from '../components/IconComponent';
 const MonImage = require('../../assets/Img/imag1.png');
 
-
 function SplashScreenOne({navigation}) {
 
-// la prtie de fichier Json 
 const SplashScreenOne = {
     
   "imagepath":MonImage,
@@ -24,8 +22,7 @@ const SplashScreenOne = {
     </View>
      <Text style={styles.Text}>{SplashScreenOne.title}</Text>
        <IconComponent iconName={SplashScreenOne.icon_title}
-      
-        function={() => {
+       function={() => {
           navigation.navigate('SplashScreenTow')
         }} 
        />
