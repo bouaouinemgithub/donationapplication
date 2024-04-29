@@ -34,7 +34,7 @@ const Login = {
           <ButtonClick title={Login.buttonlogin}/>
           <View style={styles.Center}>
                   <View style={styles.Ligne}></View>
-                  <View style={styles.Cercle}><Text style={{fontWeight:'bold'}}>OR</Text></View>
+                  <View style={styles.Cercle}><Text style={styles.or}>OR</Text></View>
             </View>
           <ButtonClick 
           title={Login.buttonsign}
@@ -84,7 +84,7 @@ const styles = StyleSheet.create({
      
      width:width*0.84,
      backgroundColor:Variable.colors.dark,
-     height:2,
+     height:1,
      position:'absolute',
      top:35
   },
@@ -97,7 +97,10 @@ const styles = StyleSheet.create({
      backgroundColor:Variable.colors.primary.default,
      alignItems:'center',
      justifyContent:'center'
-      }
+      },
+  or:{
+    fontWeight:'bold'
+  }
 });
 
  export default Login

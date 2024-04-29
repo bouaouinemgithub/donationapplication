@@ -1,5 +1,4 @@
-import { StatusBar } from 'expo-status-bar';
-import { Button, StyleSheet, Text, View,Dimensions,Image } from 'react-native';
+import { Button, StyleSheet, Text, View,Dimensions,Image,StatusBar  } from 'react-native';
 const {width,height} = Dimensions.get("window")
 import Variable from '../../assets/Variable';
 import IconComponent from '../components/IconComponent';
@@ -24,7 +23,7 @@ const RestaurantLogin = {
 
   return (
    <View style={styles.container}>
-    
+     
       <Text style={styles.Title}>{RestaurantLogin.title}</Text>
       <View  style={styles.Page}>
            <Image style={styles.PageImag} source={RestaurantLogin.imagepath} />
@@ -71,7 +70,7 @@ const styles = StyleSheet.create({
 
   Page:{
       width:width*0.66,
-      alignItems:'center'
+      alignItems:'center',
 
   },
   PageImag:{

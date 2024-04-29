@@ -5,7 +5,7 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 import Variable from '../../assets/Variable';
 
 const ButtonClick = props => {
-  const containerStyle = [styles.button, props.containerStyle]; // Fusionner les styles du conteneur
+  const containerStyle = [styles.button, props.containerStyle]; 
 
   return (
     <TouchableOpacity
@@ -35,7 +35,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     fontSize: 16,
     opacity: 0.7
-    // Ajoutez ici le style spécifique pour le texte si nécessaire
+   
   },
 });
 

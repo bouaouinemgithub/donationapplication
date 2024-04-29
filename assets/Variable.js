@@ -1,6 +1,4 @@
-// theme.js
 
-//  pour les fontSizes
 import { Dimensions } from 'react-native';
 const { width, height } = Dimensions.get('window');
 const responsiveFontSize = (size) => {
@@ -9,7 +7,6 @@ const responsiveFontSize = (size) => {
   const newSize = size * scale;
   return newSize;
 };
-
 const fontSizes = {
   minsmall: responsiveFontSize(11),
   small: responsiveFontSize(14),
@@ -17,8 +14,6 @@ const fontSizes = {
   large: responsiveFontSize(24),
   extraLarge: responsiveFontSize(30),
 };
-
-//  pour les coluers
 const colors = {
     primary:{
       default :"#8FE1D7",
@@ -30,7 +25,6 @@ const colors = {
       default :'#A1A1A1',
       "100":'#909090'
     },
-    
     dark: '#000000',
     danger: '#FF0000',
     success: '#C4C4C4',
@@ -39,9 +33,6 @@ const colors = {
     baground:"#F4F0F1",
     blue:'#0085FF'
   };
-
-// pour les fonts
-
 const fontStyles = {
     // Polices par défaut
     defaultFontFamily: 'Roboto',
@@ -58,8 +49,6 @@ const fontStyles = {
       fontStyle: 'italic',
     }
   };
-  
- 
   export default {
     colors,
     fontSizes,

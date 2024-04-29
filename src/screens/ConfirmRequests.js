@@ -24,7 +24,7 @@ const SignUp = {
   return (
    <View style={styles.container}>
     <View style={styles.Page}>
-        <Text style={styles.Title}>Confirm Requests</Text>
+        <Text style={styles.Title}>Confirm Requestsss</Text>
         <View style={styles.Card}>
             <View style={{position:'absolute',backgroundColor:Variable.colors.success,
             width:width*0.93,zIndex:0,left:15,opacity:0.15}}>
@@ -64,14 +64,13 @@ const styles = StyleSheet.create({
      color:Variable.colors.dark,
      fontSize:Variable.fontSizes.medium,
      fontWeight:'bold',
-     marginBottom:27
+     marginBottom:27,
   },
   Card:{
     width:width*0.93,
-    backgroundColor:Variable.colors.success,
+    backgroundColor:'Variable.colors.success',
     position:'relative',
     alignItems:'center',
-   
   },
  
   CardImag:{
@@ -86,7 +85,9 @@ const styles = StyleSheet.create({
     color:Variable.colors.dark,
     fontSize:Variable.fontSizes.large,
     marginBottom:56,
-    fontWeight:'bold'
+    fontWeight:'bold',
+    
+
 }
 
  

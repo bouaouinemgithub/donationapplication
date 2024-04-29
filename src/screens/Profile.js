@@ -11,17 +11,20 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 function Profile({navigation}) {
 
 // la prtie de fichier Json 
-const SplashScreenOne = {
+const pageProfiel = {
     
+   "page" :"Profile",
   "imagepath":MonImage,
-  "title": "You have two hands one to help yourself,the second to help others.",
+  "title": "YOUTH RED CROSS VEC.",
   "icon_title": "chevron-right",
+  "titile_buttom": "YOUTH RED CROSS VEC",
+  "subtitle":"Non Governmental Organization"
 }
 
   return (
    <View style={styles.container}>
     <View style={{paddingTop:height*0.0875}}>
-        <Text style={styles.Profile}>Profile</Text>
+        <Text style={styles.Profile}>{pageProfiel.page}</Text>
         <View style={styles.CardImag}>
            <Image source={MonImage} />
         </View>

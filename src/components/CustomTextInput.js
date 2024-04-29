@@ -8,13 +8,12 @@ import {
   } from 'react-native';
   import React, {useState} from 'react';
   import Variable from '../../assets/Variable';
-import { validate } from 'react-native-web/dist/cjs/exports/StyleSheet/validate';
 const {width,height}= Dimensions.get("window")
 
   
   const CustomTextInput = props => {
     const [eye, setEye] = useState(true);
-    const styleinput = [styles.input, props.styleinput]; // Fusionner les styles du conteneur
+    const styleinput = [styles.input, props.styleinput]; 
 
     return (
       <View style={styles.searchSection}>
@@ -22,28 +21,12 @@ const {width,height}= Dimensions.get("window")
           style={styleinput}
           placeholder={props.textInputplaceholder}
           underlineColorAndroid="transparent"
-          // c est pour afficier le text
-          // secureTextEntry={eye}
-          // value={old_password}
+        
           value={props.textInputValue}
           onChangeText={props.textInputSetValue}
         />
         
-        {
-            // c est js pour affichier le text
-        /* eye-outline */}
-        {/* <TouchableOpacity
-          activeOpacity={0.2}
-          onPress={() => {
-            setEye(!eye);
-          }}> */}
-          {/* <Icon
-            size={24}
-            color={Variable.colors.danger}
-            type="ionicon"
-            name={eye ? 'ios-eye' : 'ios-eye-off'}
-          // /> */}
-        {/* </TouchableOpacity> */}
+       
       </View>
     );
   };

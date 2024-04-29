@@ -2,7 +2,6 @@ import React from 'react';
 import { TouchableOpacity, StyleSheet, Image,View,Dimensions, Text } from 'react-native';
 import Variable from '../../assets/Variable';
 const User = require('../../assets/Img/user.png')
-// const { width, height } = Dimensions.get('window');
 const {width,height}= Dimensions.get("window")
 
 

@@ -52,7 +52,7 @@ const SignUp = {
             </View>
           </View>
           <View style={{justifyContent:'flex-end',marginRight:30,
-      flexDirection:'row',width:'100%'}}>
+      flexDirection:'row',width:'98%',marginTop:150}}>
       <IconUser icon="user"/>
       </View>
     </View>
@@ -121,7 +121,7 @@ const styles = StyleSheet.create({
           fontSize:13
       },
       styleinputTextEry:{
-         height:145,
+         height:50,
       }
 });
 

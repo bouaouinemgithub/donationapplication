@@ -14,9 +14,6 @@ import RestaurantLogin from './src/screens/RestaurantLogin';
 import NewDonation from './src/screens/NewDonation';
 import ConfirmRequests from './src/screens/ConfirmRequests';
 import Profile from './src/screens/Profile';
-import TestElements from './src/screens/TestElements';
-
-
 
 const Stack = createNativeStackNavigator();
 
@@ -35,10 +32,8 @@ const RootApp = () => {
         <Stack.Screen name="NewDonation" component={NewDonation} />
         <Stack.Screen name="ConfirmRequests" component={ConfirmRequests} />
         <Stack.Screen name="Profile" component={Profile} />
-        <Stack.Screen name="TestElements" component={TestElements} />
-        
-        
-       </Stack.Navigator>
+
+      </Stack.Navigator>
     </NavigationContainer>
   );
 }

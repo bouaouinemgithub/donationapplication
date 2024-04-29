@@ -4,24 +4,26 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 import Variable from '../../assets/Variable';
 import IconUser from './IconUser';
 const {width,height} =Dimensions.get('window');
+
+
 const CradChoix = props => {
   return (
      <View>
+      <TouchableOpacity 
+                activeOpacity={0.5}
+                onPress={ props.function}
+                 style={styles.button} >
           <View style={styles.CardChoix}>
               <View style={styles.Left} >
                 <IconUser icon="user"/>
                <Text style={styles.LeftText}>{props.text}</Text>
               </View>
-              
-              <TouchableOpacity 
-                activeOpacity={0.7}
-                onPress={ props.function}
-                style={styles.button} >
-                <Icon name="chevron-right" size={20} color={Variable.colors.secondary[100]} style={styles.icon} />
+               <Icon name="chevron-right" size={20} color={Variable.colors.secondary[100]} style={styles.icon} />
+                </View>
              </TouchableOpacity>
  
          
-          </View>
+          
      </View>
    
   );

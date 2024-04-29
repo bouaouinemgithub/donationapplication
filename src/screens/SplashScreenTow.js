@@ -18,14 +18,17 @@ const SplashScreenOne = {
 
   return (
    <View style={styles.container}>
-    <View style={{paddingTop:width*0.23}}>
+    <View  style={{paddingTop:width*0.23}}>
     <CardImag imag={SplashScreenOne.imagepath} />
     </View>
      <Text style={styles.Text}>{SplashScreenOne.title}</Text>
        <IconComponent iconName={SplashScreenOne.icon_title}
         function={() => {
           navigation.navigate('SplashScreenThree')
-        }} 
+        }}
+
+        
+
        />
    </View>
   );
