@@ -9,7 +9,6 @@ import ButtonClick from '../components/ButtonClick';
 
 function Login({navigation}) {
 
-// la prtie de fichier Json 
 const Login = {
     
   "title": "Sign In:",

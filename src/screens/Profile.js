@@ -10,7 +10,6 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 
 function Profile({navigation}) {
 
-// la prtie de fichier Json 
 const pageProfiel = {
     
    "page" :"Profile",

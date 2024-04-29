@@ -9,7 +9,6 @@ import IconUser from '../components/IconUser';
 
 function RestaurantLogin({navigation}) {
 
-// la prtie de fichier Json 
 const RestaurantLogin = {
     
   

@@ -4,11 +4,9 @@ const {width,height} = Dimensions.get("window")
 import Variable from '../../assets/Variable';
 import { validate } from 'react-native-web/dist/cjs/exports/StyleSheet/validate';
 import ButtonClick from '../components/ButtonClick';
-// import IconUser from '../components/IconUser';
 const MonImage = require('../../assets/Img/user.png');
 function ConfirmRequests({navigation}) {
 
-// la prtie de fichier Json 
 const SignUp = {
     
   "title": "Food Details:",
